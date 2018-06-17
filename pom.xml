@@ -11,6 +11,7 @@
     <modules>
         <module>spring-data-web</module>
         <module>spring-data-dal</module>
+        <module>spring-data-manager</module>
     </modules>
 
     <parent>
@@ -23,6 +24,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
         <spring.boot.version>1.5.9.RELEASE</spring.boot.version>
+        <poi.version>3.9</poi.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -42,6 +44,16 @@
                 <groupId>org.springframework.data</groupId>
                 <artifactId>spring-data-jpa</artifactId>
                 <version>2.0.7.RELEASE</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi</artifactId>
+                <version>${poi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi-ooxml</artifactId>
+                <version>${poi.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
